@@ -1,0 +1,359 @@
+:root {
+    --fuenteMeading: 'Pt Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteGrande:  'Bebas Neue', cursive;
+    --fuenteTitulos: 'Permanent Marker', cursive;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* , *:before , *:after {
+/* box-sizing: inherit;*/
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+
+}
+a {
+    text-decoration: none;
+}
+
+h1 , h2, h3 , h4 {
+    font-family: var(--fuenteMeading);
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h3 {
+    font-size: 4rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centar-texto {
+    text-align: center;
+}
+
+
+/*Header*/
+
+section {
+    background: rgba(0, 0, 0, 0.70) url(img/fondo-body.jpg);
+    background-size: cover;
+    background-blend-mode: darken;  
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 900px;
+}
+section .seccion-principal {
+    margin-top: 17%;
+    font-family: var(--fuenteMeading);
+    text-align: center;
+    color: white;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+section .seccion-principal h1 {
+    font-family: var(--fuenteTitulos);
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+header .header-imagen {
+    display: flex;
+    width: 15%;
+    height: 15%;
+    float: left;
+    margin-left: 6%;
+    margin-top: 5px;
+}
+
+.header-texto {
+    display: flex;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.header-texto a {
+    text-decoration: none;
+    font-size: 120%;
+    font-family: var(--fuenteTitulos);
+    margin: 4%;
+    margin-top: 50px;
+    color:var(--blanco);
+    transition: color 1s;
+}
+
+.header-texto a:hover {
+    color: red;
+}
+
+/*PERSONAL*/
+
+.personal {
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.personal__foto img {
+    max-width: 700px;
+    max-height: 500px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.personal__foto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.personal__texto {
+    text-align: justify;
+    max-width: 550px;
+    min-width: 100px;
+    font-size: 23px ;
+    font-family: var(--fuenteTitulos);
+}
+
+
+/*COLABORACIONES*/
+
+
+.colaboraciones-principal {
+    width: 100%;
+    height: 100%;
+}
+.colaboracion__videos {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    height: 700px;
+}
+.colaboracion__videos .cantantes {
+    max-width: 500px;
+    max-height: 600px;
+    min-width: 150px;
+    min-height: 300px;
+}  /*
+.colaboraciones-principal .cantantes {
+    display: grid;
+    grid-template-rows: repeat(4, 500px) ;
+}
+*/
+.colaboraciones-principal .titulo-colaboraciones {
+    max-width: 100%;
+    font-size: 60px;
+    color: #ffffff;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.929);
+    text-align: center;
+}
+.colaboraciones-principal .titulo-colaboraciones h2 {
+    font-family: var(--fuenteTitulos);
+}
+
+.colaboraciones-principal .cantantes .artista {
+    margin-top: 0px;
+}
+
+/*ARITSTA PEMA*//*
+.colaboraciones-principal .cantantes .pema {
+    display: grid;
+    background:url(artistas/lauti-pema.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(2 , auto);
+    justify-items:center;
+    align-items:center;
+}
+.colaboraciones-principal .cantantes .pema h3 {
+    color: azure;
+    font-family: var(--fuenteTitulos);
+}
+.colaboraciones-principal .cantantes .pema a{
+    margin-left: 25px;
+}*/
+
+
+/*ARTISTA LAUTARO LR *//*
+.colaboraciones-principal .cantantes .lautaroLR {
+    display: grid;
+    background: url(artistas/lautaro-lr.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(2, auto );
+    justify-items: center;
+    align-items: center;
+}
+.colaboraciones-principal .cantantes .lautaroLR h3 {
+    color: azure;
+    font-family: var(--fuenteTitulos);
+}
+.colaboraciones-principal .cantantes .lautaroLR nav {
+    display: grid;
+    grid-template-columns: repeat(2 , 200px);
+    grid-template-rows: repeat(2 , 180px);
+}
+.colaboraciones-principal .cantantes .lr a {
+    margin-left: 20px;
+}*/
+
+
+/*ARTISTA KEPA*//*
+.colaboraciones-principal .cantantes .kepa {
+    display: grid;
+    background: url(artistas/kepa.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+}
+.colaboraciones-principal .cantantes .kepa nav {
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    grid-template-rows: repeat(2 , auto);
+}
+.colaboraciones-principal .cantantes .kepa h3 {
+    color: azure;
+    font-family: var(--fuenteTitulos);
+}*/
+
+/*OTROS ARTISTAS*//*
+.colaboraciones-principal .cantantes .otrosArtistas {
+    display: grid;
+    background: url(artistas/mecha-loca.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.colaboraciones-principal .cantantes .otrosArtistas nav {
+    display: grid;
+    grid-template-columns: repeat(3 , 200px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.colaboraciones-principal .cantantes .otrosArtistas h3 {
+    color: azure;
+    font-family: var(--fuenteTitulos);
+}
+.colaboraciones-principal .cantantes .banda a {
+    margin-left: 25px;
+}
+
+
+.colaboraciones-principal .cantantes .artista a img {
+    max-width: 175px;
+    min-width: 100px;
+    max-height: 175px;
+    min-height: 100px;
+}
+
+.colaboraciones-principal .cantantes .artista a {
+    max-height: 250px;
+    min-width: 100px;
+    text-align: center;
+    min-height: 100px;
+    max-width: 250px;
+}
+
+*/
+/*SHOws*/
+
+.show {
+    background-color: rgba(0, 0, 0, 1.0);
+}
+.show .titulo {
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--fuenteTitulos);
+}
+.show__seccion {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 40px;
+    height: 400px;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+.shows--texto{
+    font-family: var(--fuenteTitulos);
+    text-align: justify;
+    color: #ffffff;
+    font-size: 1.2vw;
+}
+.shows--img {
+    max-width: auto;
+    min-width: 100px;
+    height: auto;
+    min-height: 100px;
+}
+
+
+/*footer*/
+
+.footer {
+    display: grid;
+    height: 80px;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.footer__nav a {
+    padding: 10px;
+    font-family: var(--fuenteTitulos);
+    color: #ffffff;
+    transition: all 2s;
+}
+.footer__nav a:hover {
+    color: red;
+}
